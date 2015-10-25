@@ -69,7 +69,7 @@
 
         var _getOrInitSession = function () {
           if (!_session) {
-            if (_clientId = _getCookie(_cookiePrefix + 'clientId');) {
+            if (_clientId = _getCookie(_cookiePrefix + 'clientId')) {
               _session = new sp.Session(_clientId, _opts.baseUrl);
             } else {
               _session = new sp.Session(undefined, _opts.baseUrl);
